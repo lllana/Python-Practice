@@ -28,3 +28,5 @@ print('The remainder of A is devided by B is {}'.format(remaindera_b))
 loga = log10(raw_a)
 print('The log10 of A is {}'.format(loga))
 
+powerab = raw_a ** raw_a 
+print('A to power of B is {}'.format(powerab))
