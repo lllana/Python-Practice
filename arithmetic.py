@@ -10,8 +10,8 @@
 
 from math import log10
 
-raw_a = int(input('Please, choose a numer A (should be a whole number) ...'))
-raw_b = int(input('Please, choose a numer B (should be a whole number) ...'))
+raw_a = int(input('Please, choose a numer A (should be a whole positive number) ...'))
+raw_b = int(input('Please, choose a numer B (should be a whole positive number) ...'))
 
 difa_b = raw_a - raw_b
 print('The difference between A and B is {}'.format(difa_b))
