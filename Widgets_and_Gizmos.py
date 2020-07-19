@@ -3,3 +3,6 @@
 # the number of gizmos in an order from the user. Then your program
 # should compute and display the total weight of the order.
 
+widgets =  
+
+gizmos = 
