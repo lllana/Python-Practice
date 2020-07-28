@@ -11,7 +11,7 @@ import math
 t1 = math.radians(int(input("Hi! Insert latitude of the first point ....")))
 g1 = math.radians(int(input("Insert longitude of the first point ....")))
 
-t2 = math.radians(int(input("Insert latitude of the secon point ....")))
+t2 = math.radians(int(input("Insert latitude of the second point ....")))
 g2 = math.radians(int(input("Insert longitude of the second point ....")))
 
 distance = 6371.01 * math.acos(math.sin(t1) * math.sin(t2) * math.cos(t1) * math.cos(t2) * math.cos(g1-g2))
