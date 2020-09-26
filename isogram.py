@@ -14,5 +14,5 @@ def main(words):
         result = is_isogram(word)
         print(word, result)
 
-main(["Tim","party","pooper"])        
+main(["Tim","party","pooper","book"])        
  
