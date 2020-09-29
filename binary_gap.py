@@ -1,4 +1,4 @@
-#A binary gap within a positive integer N is any maximal sequence of consecutive zeros 
+# A binary gap within a positive integer N is any maximal sequence of consecutive zeros 
 # that is surrounded by ones at both ends in the binary representation of N. 
 # For example, number 9 has binary representation 1001 and contains a binary gap of length 2. 
 # The number 529 has binary representation 1000010001 and contains two binary gaps: 
@@ -14,3 +14,31 @@
 # Given N = 32 the function should return 0, because N has binary representation '100000' and thus no binary gaps. 
 # Write an efficient algorithm for the following assumptions: 
 # N is an integer within the range [1..2,147,483,647].
+
+def solution(N):
+    n_bin = format(N, 'b')
+    print(n_bin)
+
+    in_gap = False
+    current_gap = 0
+    gaps_list = [0]
+
+    for i in n_bin:
+        if i == '1' and in_gap == False:
+            in_gap = True
+            
+
+        elif i == '1' and in_gap == True:
+            gaps_list.append(current_gap)
+            current_gap = 0
+
+        elif i == '0' and in_gap == False:
+            pass
+        
+        elif i == '0' and in_gap == True:
+            current_gap += 1
+    
+    return max(gaps_list)
+
+
+print(solution(51712))
