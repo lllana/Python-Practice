@@ -27,4 +27,3 @@ def read_file(csv_file):
     return campaign_dic
 
 print(read_file(csv_file))
-
