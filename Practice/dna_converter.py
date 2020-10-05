@@ -1,4 +1,4 @@
-#First attempt 
+#First attempt with simple loop
 def DNA_strand(dna):
 
     result = ''
@@ -16,7 +16,7 @@ def DNA_strand(dna):
 
 print(DNA_strand('GTAG'))
 
-
+#Attempt to optimise itaration through the loop
 def DNA_strand(dna):
 
     dict = {'A': 'T', 'T':'A', 'G':'C', 'C':'G'}    
@@ -29,11 +29,11 @@ def DNA_strand(dna):
 
 print(DNA_strand('GTAG'))
 
+#Final version with list of comprehensions
 
-def DNA_strand(dna):
+dict = {'A': 'T', 'T':'A', 'G':'C', 'C':'G'}    
 
-    dict = {'A': 'T', 'T':'A', 'G':'C', 'C':'G'}    
-        
+def DNA_strand(dna):        
     return ''.join([dict[i] for i in dna])
 
 print(DNA_strand('GTAG'))    
