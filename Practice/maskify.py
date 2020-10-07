@@ -1,6 +1,6 @@
 # Your task is to write a function maskify, which changes all but the last four characters into '#'.
 
-#1option
+# 1 option
 def maskify(cc):
 
     maskify = ''
@@ -13,14 +13,14 @@ def maskify(cc):
 print(maskify('636363636636636666'))
 
 
-#2option
+# 2 option
 def maskify(cc):
     return ''.join([i.replace(i,'#') for i in cc[:-4]]) + cc[-4:]
 
 print(maskify('636363636636636666'))
 
 
-#3option
+# 3 option
 def maskify(cc):
     return "#"*(len(cc)-4) + cc[-4:]
 
