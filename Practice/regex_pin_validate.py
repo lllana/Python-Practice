@@ -10,5 +10,4 @@ def validate_pin(pin):
     l = len(pin)
     return nums_pattern.match(pin) != None and (l == 4 or l == 6)
 
-
 print(validate_pin('55534547'))   
