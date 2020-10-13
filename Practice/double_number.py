@@ -22,3 +22,10 @@ def repeats(arr):
     return total
 
 print(repeats([4,5,7,5,4,8,15]))
+
+#2 option 
+
+def repeats(arr):
+    return sum([x for x in arr if arr.count(x) == 1])
+
+print(repeats([4,5,7,5,4,8,15,15]))
