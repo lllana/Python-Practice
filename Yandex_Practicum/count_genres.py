@@ -50,14 +50,15 @@ all_genres = [
 
 genres_counts = []
 for genre in all_genres:
-    count = len(filter_by_genre(oscar_data, genre))
-    genres_counts.append([genre, count])
     # call the function filter_by genre and use len()
+    count = len(filter_by_genre(oscar_data, genre))
     # use append() to add the genre name and results to the genres_counts table
+    genres_counts.append([genre, count])
+    
 
 
-genres_counts.sort(key=lambda row: row[1], reverse = True)
 # use sort() to sort the table in descending order
+genres_counts.sort(key=lambda row: row[1], reverse = True)
 
 print('Genre        | Number')
 print('------------------------')
