@@ -6,4 +6,4 @@ print(df.isnull().sum())
 
 df['track_name'].fillna('unknown', inplace = True)
 
-df['genre_name'] = df['artist_name'].dropna()
+df.dropna(subset=['genre_name'], inplace=True)
