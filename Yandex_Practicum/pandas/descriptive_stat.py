@@ -17,3 +17,6 @@ pop_music_min_info = pop_music[pop_music['total_play_seconds'] == pop_music_min_
 
 pop_music_median = pop_music['total_play_seconds'].median()
 #print(pop_music_median)
+
+pop_music_mean = pop_music['total_play_seconds'].mean()
+#print(pop_music_mean)
