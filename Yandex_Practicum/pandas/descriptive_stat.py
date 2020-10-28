@@ -7,4 +7,10 @@ pop_music_max_total_play = pop_music['total_play_seconds'].max()
 #print(pop_music_max_total_play)
 
 pop_music_max_info = pop_music[pop_music['total_play_seconds'] == pop_music_max_total_play]
-print(pop_music_max_info)
+#print(pop_music_max_info)
+
+pop_music_min_total_play = pop_music['total_play_seconds'].min()
+#print(pop_music_min_total_play)
+
+pop_music_min_info = pop_music[pop_music['total_play_seconds'] == pop_music_min_total_play]
+#print(pop_music_min_info)
