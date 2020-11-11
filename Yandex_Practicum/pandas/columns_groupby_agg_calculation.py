@@ -9,4 +9,9 @@ logs_grouped = logs.groupby('source').agg({'purchase': ['count', 'sum']})
 
 logs_grouped['conversion'] = logs_grouped[('purchase', 'sum')] / logs_grouped[('purchase', 'count')]
 
+#find out columns names
+print(logs_grouped.columns.tolist())
+
 print(logs_grouped)
+
+#df.columns = df.columns.droplevel(0)
