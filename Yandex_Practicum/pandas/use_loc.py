@@ -6,5 +6,5 @@ stock['item'] = stock['item'].drop_duplicates()
 stock = stock.dropna().reset_index(drop=True)
 
 stock.loc[stock['item'] == 'Xiaomi Redmi 6A 16GB', 'count'] = xiaomi
-
+#stock.loc[0, 'count'] = xiaomi
 print(stock)
