@@ -16,9 +16,11 @@ def alert_group_importance(row):
 
     return 'ticket queued' 
 
-row_values = ['high', 1]
-row_columns = ['alert_group', 'importance']
+#row_values = ['high', 1]
+#row_columns = ['alert_group', 'importance']
 
-row = pd.Series(data = row_values, index = row_columns)
+#row = pd.Series(data = row_values, index = row_columns)
 
-print(alert_group_importance(row))
+#print(alert_group_importance(row))
+
+support_log_grouped['importance_status'] = support_log_grouped.apply(alert_group_importance, axis=1)
