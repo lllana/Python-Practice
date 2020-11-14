@@ -1,6 +1,6 @@
 def alert_group_importance(row):
-    alert_group = row[0]
-    importance = row[1]
+    alert_group = row['alert_group']
+    importance = row['importance']
     
     if alert_group=='medium':
         if importance==1:
@@ -14,6 +14,11 @@ def alert_group_importance(row):
         if importance== 1:
             return 'block'
 
-        return 'ticket queued' 
+    return 'ticket queued' 
 
-print(alert_group_importance(['high', 1]))
+row_values = ['high', 1]
+row_columns = ['alert_group', 'importance']
+
+row = pd.Series(data = row_values, index = row_columns)
+
+print(alert_group_importance(row))
