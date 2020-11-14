@@ -14,6 +14,7 @@ position = [
 total_position = 0
 count_rows = 0
 erroneous_rows = 0
+wrong_rows_content = []
 
 for row in position:
     count_rows += 1
@@ -22,6 +23,8 @@ for row in position:
         total_position += level
     except:
         erroneous_rows += 1
+        wrong_rows_content.append(row)
 
 print('Total measurements',count_rows)
 print('Total erroneous rows',erroneous_rows)
+print('Erroneous rows', wrong_rows_content)
