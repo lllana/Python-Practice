@@ -15,4 +15,4 @@ df = pd.DataFrame({
 print(df[1.5*df['Price'] < df['Price'].max()]) 
 
 #Select rows where there's a layover and the return flight arrives by July 8 (i.e., not July 9, 10, or 11).
-print(df[(df['Is_Direct'] == False) & ~ (df['From'].isin(['09.07.2020']))])
+print(df[(df['Is_Direct'] == False) & ~ (df['Date_To'].isin(('09.07.2019','10.07.2019','11.07.2019')))]) 
