@@ -13,3 +13,5 @@ df = pd.DataFrame({
         'Travel_time_to': [350, 225, 720, 355, 250],
 })
 print(df.query('To == "Barcelona"'))
+
+print(df.query('Has_luggage == False & Airline not in ("S7", "Rossiya")'))
