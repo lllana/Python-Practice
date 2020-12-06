@@ -15,3 +15,8 @@ df = pd.DataFrame({
 print(df.query('To == "Barcelona"'))
 
 print(df.query('Has_luggage == False & Airline not in ("S7", "Rossiya")'))
+
+# usage of variable which is outsidde of df
+
+max_time = 300
+print('Max time used', df.query('Travel_time_from < @max_time'))
